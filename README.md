@@ -3,6 +3,11 @@
 ## Overview
 Welcome to the Sportlink Club Info Viewer Tizen! This project showcases match results, match information, and pre-match details using a modern Vue 3 + Vite application. Additionally, it includes a Tizen app designed for older Samsung Smart TVs, making sports data accessible to a wider audience.
 
+## Required Reading 
+This repository contains a build versions of the [Orginal Repository](https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer).
+
+Adjust config.xml to your own needs.
+
 ## Features
  - Dynamic Match Results: Displays real-time match results for various sports.
  - Match Information: Provides detailed information about ongoing and upcoming matches.
@@ -20,8 +25,8 @@ Welcome to the Sportlink Club Info Viewer Tizen! This project showcases match re
 ## Installation
 ## Vue 3 + Vite App
  1. Clone the repository:
-    `git clone https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer.Tizen.git
-    cd /Sportlink.Club.Info.Viewer.Tizen`
+    `git clone https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer.git
+    cd /Sportlink.Club.Info.Viewer`
  3. Install dependencies:
     `npm install`
  5. Start the development server:
@@ -31,7 +36,9 @@ Welcome to the Sportlink Club Info Viewer Tizen! This project showcases match re
 ## Tizen Samsung TV App
  1. Install Tizen Studio and set up your environment.
  2. Clone the Tizen app directory from this repository.
- 3. Open the Tizen project in Tizen Studio.
+    `git clone https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer.Tizen.git
+    cd /Sportlink.Club.Info.Viewer.Tizen`
+ 3. Open the Tizen project in Tizen Studio or Visual Studio with the Tizen Extension.
  4. Connect your Samsung Smart TV to your development environment.
  5. Build and deploy the app to your Samsung Smart TV.
 
