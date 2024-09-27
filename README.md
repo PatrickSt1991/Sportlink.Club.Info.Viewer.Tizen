@@ -20,8 +20,8 @@ Welcome to the Sportlink Club Info Viewer Tizen! This project showcases match re
 ## Installation
 ## Vue 3 + Vite App
  1. Clone the repository:
-    `git clone https://github.com/yourusername/match-results-app.git`
-    `cd match-results-app`
+    `git clone https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer.Tizen.git
+    cd /Sportlink.Club.Info.Viewer.Tizen`
  3. Install dependencies:
     `npm install`
  5. Start the development server:
