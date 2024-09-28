@@ -5,6 +5,7 @@ Welcome to the Sportlink Club Info Viewer Tizen! This project showcases match re
 
 ## Required Reading 
 [Read for usage and setup of Build and Tizen App for full explanation](https://patrickst1991.github.io/Sportlink.Club.Info.Viewer/)
+
 This repository contains a build versions of the [Sportlink.Club.Info.Viewer repository](https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer).
 If you're device is new enough to run the code on it's own then you probably won't be needing this.
 
