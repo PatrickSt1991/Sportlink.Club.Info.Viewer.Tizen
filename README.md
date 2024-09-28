@@ -4,6 +4,7 @@
 Welcome to the Sportlink Club Info Viewer Tizen! This project showcases match results, match information, and pre-match details using a modern Vue 3 + Vite application. Additionally, it includes a Tizen app designed for older Samsung Smart TVs, making sports data accessible to a wider audience.
 
 ## Required Reading 
+[Read for usage and setup of Build and Tizen App for full explanation](https://patrickst1991.github.io/Sportlink.Club.Info.Viewer/)
 This repository contains a build versions of the [Sportlink.Club.Info.Viewer repository](https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer).
 If you're device is new enough to run the code on it's own then you probably won't be needing this.
 
