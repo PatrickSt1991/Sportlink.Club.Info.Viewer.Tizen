@@ -35,9 +35,14 @@ Adjust config.xml to your own needs.
  2. Install dependencies:
     ```npm install```
  3. Start the development server:
-    ```npm run dev```
- 4. Open your browser and navigate to http://localhost:5173 **(or the specified port in the terminal)** to see the app in action!
- 5. Change the settings in config.js
+    ```
+    npm run dev
+    npm install vite-plugin-html-inline --save-dev
+    npm run build
+    ```
+    
+ 5. Open your browser and navigate to http://localhost:5173 **(or the specified port in the terminal)** to see the app in action!
+ 6. Change the settings in config.js
     - BASE_URL -> Should be empty if you want to run it in the Tizen app
     - CLIENT_ID -> Should be the clientId of your club
     - PROGRAMMA_DAGEN -> Used for MatchInfo, shows the amount of days ahead for upcomming matches
