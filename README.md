@@ -37,17 +37,18 @@ Adjust config.xml to your own needs.
  3. Start the development server:
     ```
     npm run dev
-    npm install vite-plugin-html-inline --save-dev
     npm run build
     ```
     
  5. Open your browser and navigate to http://localhost:5173 **(or the specified port in the terminal)** to see the app in action!
  6. Change the settings in config.js
-    - BASE_URL -> Should be empty if you want to run it in the Tizen app
-    - CLIENT_ID -> Should be the clientId of your club
-    - PROGRAMMA_DAGEN -> Used for MatchInfo, shows the amount of days ahead for upcomming matches
-    - UITSLAG_DAGEN -> Used for MatchResults, shows the amount of days in the past for match results
-    - HOMESCREEN -> Used for what screen should be visable if you go to http://localhost
+    - BASE_URL = './'; - Keep as is for Tizen app
+    - CLIENT_ID = ''; - Fill with your own ClientId
+    - PROGRAMMA_DAGEN = '7'; - Used for MatchInfo, shows the amount of days ahead for upcomming matches
+    - UITSLAG_DAGEN = '7'; - Used for MatchResults, shows the amount of days in the past for match results
+    - PREMATCH_REFRESH = '15'; - Amount of minutes to refresh the /prematch-info screen
+    - ENABLE_SCREEN_SWITCH = true; - Is it allowd to switch between /match-info and /match-results
+    - HOMESCREEN -> Used for what screen should be shown at start-up
 
 ## Tizen Samsung TV App
  1. Install Tizen Studio and set up your environment.
