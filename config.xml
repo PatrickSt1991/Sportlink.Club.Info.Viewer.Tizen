@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer" version="0.2.1" viewmodes="maximized">
-    <access origin="http://192.168.2.125" subdomains="true"/>
-    <access origin="https://data.sportlink.com" subdomains="true"/>
-    <access origin="https://logoapi.voetbal.nl" subdomains="true"/>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer" version="0.2.1" viewmodes="maximized">
+    <access origin="https://data.sportlink.com" subdomains="true"></access>
+    <access origin="https://binaries.sportlink.com" subdomains="true"></access>
+    <access origin="https://d26urwx8o7j8vg.cloudfront.net" subdomains="true"></access>
+    <access origin="https://voetbal.nl" subdomains="true"></access>
+    <tizen:allow-navigation>*.sportlink.com, *cloudfront.net, *.voetbal.nl</tizen:allow-navigation>
     <tizen:application id="9EWPx5SiWH.SportlinkClubInfoViewer" package="9EWPx5SiWH" required_version="2.3"/>
     <author href="https://github.com/PatrickSt1991" email="patrick.stel@kpnmail.nl">Patrick Stel</author>
     <content src="index.html"/>
+    <tizen:content-security-policy>script-src 'self' 'unsafe-inline' 'unsafe-eval'</tizen:content-security-policy>
     <description xml:lang="en-gb">App to show club data for sports clubs</description>
+    <description>Used to display club data on Tizen Smart TV's</description>
     <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
     <icon src="icon.png"/>
-    <license href="https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer/blob/main/LICENSE">MIT</license>
     <license xml:lang="en-gb" href="https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer/blob/main/LICENSE">MIT</license>
+    <license href="https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer/blob/main/LICENSE">MIT</license>
     <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
     <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="extensive"/>
-    <name>SportlinkClubInfoViewer</name>
+    <tizen:metadata key="http://tizen.org/metadata/content-security-policy" value="default-src 'self' data: gap:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';"/>
     <name xml:lang="en-gb">Sportlink Club Info Viewer</name>
+    <name>SportlinkClubInfoViewer</name>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:profile name="tv-samsung"/>
     <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+    <tizen:setting encryption="disable" install-location="auto" hwkey-event="enable"/>
 </widget>
