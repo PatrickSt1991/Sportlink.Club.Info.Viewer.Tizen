@@ -1,0 +1,26 @@
+name: Remove leading slash from script src
+
+on:
+  push:
+    branches:
+      - '**'  # Triggers on push to any branch
+
+jobs:
+  fix-script-path:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Remove leading slash from script src
+        run: |
+          sed -i 's|<script type="module" src="/src/main.js"></script>|<script type="module" src="src/main.js"></script>|' index.html
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Remove leading slash from script src in index.html" || echo "No changes to commit"
+          git push
